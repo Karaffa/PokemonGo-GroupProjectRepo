@@ -1,0 +1,28 @@
+install.packages("wordcloud2")
+install.packages("splitstackshape")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("DBI")
+install.packages("data.table")
+install.packages("readr")
+
+library(readr)
+library(data.table)
+library(DBI)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(splitstackshape)
+library(wordcloud2)
+
+timedTweets <- read_csv("~/Desktop/PokemonGo-GroupProjectRepo/data/timedtwitterdump.csv")
+View(timedTweets)
+
+trumpTweets <- trumpTweets %>% filter(!is.na(trumpTweets$id))
+tweetT<- as.data.frame(trumpTweets$hashtags)
+tweetSplit<- cSplit(tweetT, "trumpTweets$hashtags", " ")
+tweetGather<- tweetSplit %>% gather(trumpTweets, hashtags, `trumpTweets$hashtags_01`:`trumpTweets$hashtags_12`)
+tweetGather<- tweetGather %>% filter(tolower(tweetGather$hashtags) != "trumpcare")
+hashFreq<- as.data.frame(table(tweetGather$hashtags))
+wordcloud2(hashFreq)
+
