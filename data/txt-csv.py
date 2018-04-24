@@ -1,8 +1,8 @@
 import csv
 import sys
 
-txt_file = r"timedtwitterdump.txt"
-csv_file = r"timedtwitterdump.csv"
+txt_file = r"forwordcloud.txt"
+csv_file = r"forwordcloud.csv"
 
 # use 'with' if the program isn't going to immediately terminate
 # so you don't leave files open
