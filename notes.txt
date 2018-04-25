@@ -1,4 +1,5 @@
 Introduction: The main focus of our project was to do an analysis of Twitter data regarding the use/gameplay of Pokemon Go and create a form of data visualization. We set out to explore the relationship between the number of people playing Pokemon Go and the number of people who are continuously tweeting about playing over the course of a month.
 
-Methods:
+Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
+
 Findings:
