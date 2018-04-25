@@ -4,3 +4,11 @@ word cloud, pie chart of most popular pokemon, line graph of most active times, 
 
 306 pikachu, 160 charmander, 238 mew, 151 Latios, 47 Exeggutor, 77 mareep, 89 Latias, 98 Moltres, 54 Snorlax, 121 Mewtwo
 
+
+Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
+
+Conclusions: 
+
+Pie Chart: Mew is the second most talked about Pokemon because we collected tweets around the beginning time of when Niantic started the field research feature that players can complete in order to get the chance to catch Mew.
+
+borders smaller, whitespace expanded, top line thing removed, 
