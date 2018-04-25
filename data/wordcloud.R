@@ -1,3 +1,5 @@
+rm(list = ls())
+
 install.packages("tm")
 install.packages("SnowballC")
 install.packages("wordcloud")
