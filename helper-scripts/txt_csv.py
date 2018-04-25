@@ -1,7 +1,9 @@
 import csv
 import sys
-
+#Manually type out name of txt file you are converting
 txt_file = r"forwordcloud.txt"
+
+#Manually type out name of csv file for conversion
 csv_file = r"forwordcloud.csv"
 
 # use 'with' if the program isn't going to immediately terminate
