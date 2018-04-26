@@ -7,12 +7,13 @@ word cloud, pie chart of most popular pokemon, line graph of most active times, 
 
 Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
 
-Conclusions: 
+Conclusions: PokemonGo 
 
-Pie Chart: Many of the top ten Pokemon we found were expected such as the legendaries and the ever popular Pikachu, but a few lesser popular Pokemon managed to sneak in. Charmander ranked third because Niantic released information for a community day for the starter Pokemon, which most players are excited about because it gives them a chance to collect enough candies for a Charizard. Mareep was mentioned in 6% of our collected tweets because we obtained them during a community day event where Mareeps appeared more frequently in the wild for one day for three hours. 
+--------------------
+Pie Chart: 
+Method: To make this pie chart we made a Bash script that made a list of each word from all the tweets, sorted them based on occurances with the number of occurences next to the word, and then picked the top ten most popular Pokemon.  
 
-Snorlax was found at 4% while Exeggcutor was at 3%, and these
+Interpertation: From this pie chart we can conclude that Pikachu is the most tweeted about Pokemon, this makes sense as it is the franchises mascot. Mew being second most talked about is most likely related to a new feature Niantic released that allows players to complete objectives for a chance to catch Mew. One of the more surprising things we found was the popularity of Mareep. This is perhaps tied to a PokemonGo Community Day event that took place while we were streaming tweets.
+---------------------
 
-Mew is the second most talked about Pokemon because we collected tweets around the beginning time of when Niantic started the field research feature that players can complete in order to get the chance to catch Mew.
 
-borders smaller, whitespace expanded, top line thing removed, 
