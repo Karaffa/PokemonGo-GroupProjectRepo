@@ -2,4 +2,15 @@ Introduction: The main focus of our project was to do an analysis of Twitter dat
 
 Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
 
-Findings: there is a cryptocurrency called pkg token which is used in pokemon go...
+Findings:
+
+
+Frequency Chart: 
+Methods: This data was acquired from tweets streamed over the course of a month with use of a Python script to stream them and a Bash script to save them in a file and parse out the relevant time data.
+
+Interpretation: From this chart we can conclude that PokemonGo Twitter activity is at it's highest during the evening times of day; peaking around 7:00 p.m. (19:00). Presumably due to a majority of Twitter users tweeting about PokemonGo becoming more active when there is more leisure time (after school, work, etc.).
+
+Word Cloud:
+Methods: To make this word cloud we used tweets streamed from twitter with the pokemongo hashtag. We then made an R script that parsed the tweets with a stop list and word transformation using the text mining package which was then made into a word cloud with the word cloud package.
+
+Interpretation: From the word cloud we found that there is a unexpected high amount of Twitter activity surrounding PokemonGo and a cryptocurrency known as pkg token. We can assume that this cryptocurrency is in high demand even more when events are held. Also, there is a ton of activity regarding capturing shiny pokemon that are released at various Community Day events with PokemonGo.
