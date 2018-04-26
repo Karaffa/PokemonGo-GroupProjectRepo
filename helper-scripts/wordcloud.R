@@ -28,7 +28,7 @@ tweetCorpus <- tm_map(tweetCorpus, removePunctuation)
 tweetCorpus <- tm_map(tweetCorpus, PlainTextDocument)
 tweetCorpus <- tm_map(tweetCorpus, removeWords, stopwords('english'))
 tweetCorpus <- tm_map(tweetCorpus, removeWords, stopwords('spanish'))
-tweetCorpus <- tm_map(wordCloudCorpus, removeWords,c("User", "Tweet", "Time"))
+tweetCorpus <- tm_map(tweetCorpus, removeWords, c("user", "tweet", "time"))
 tweetCorpus <- tm_map(tweetCorpus, stemDocument)
 wordcloud(tweetCorpus, max.words = 200, random.order = FALSE, random.color = TRUE, 
           colors = rev(colorRampPalette(brewer.pal(8,"Paired"))(32)), scale=c(5, .5))
@@ -49,7 +49,11 @@ wordCloudCorpus <- tm_map(wordCloudCorpus, removePunctuation)
 wordCloudCorpus <- tm_map(wordCloudCorpus, PlainTextDocument)
 wordCloudCorpus <- tm_map(wordCloudCorpus, removeWords, stopwords('english'))
 wordCloudCorpus <- tm_map(wordCloudCorpus, removeWords, stopwords('spanish'))
+wordCloudCorpus <- tm_map(wordCloudCorpus, removeWords, c("pokemongo", "httpst…", "ポケモンGO", 
+                      "retweet", "httpstcokbititppf", "pokemon", "ポケモンgo","ポケモンの巣",
+                      "httpstcokbititppf", "pokémon", "...", "twi...", "group...", "will",
+                      "httpst...", "pikachu...", "know", "look", "just", "like", "join", "aquí",
+                      "1000", "u00001f680", "u0001f534", "u0001f31f", "u0001f525"))
 wordCloudCorpus <- tm_map(wordCloudCorpus, stemDocument)
-wordcloud(wordCloudCorpus, max.words = 200, random.order = FALSE, random.color = TRUE, 
+wordcloud(wordCloudCorpus, max.words = 100, random.order = FALSE, random.color = TRUE, 
           colors = rev(colorRampPalette(brewer.pal(8,"Paired"))(32)), scale=c(5, .5))
-
