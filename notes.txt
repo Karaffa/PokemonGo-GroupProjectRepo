@@ -2,4 +2,4 @@ Introduction: The main focus of our project was to do an analysis of Twitter dat
 
 Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
 
-Findings:
+Findings: there is a cryptocurrency called pkg token which is used in pokemon go...
