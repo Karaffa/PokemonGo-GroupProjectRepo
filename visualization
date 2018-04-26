@@ -5,12 +5,12 @@ word cloud, pie chart of most popular pokemon, line graph of most active times, 
 306 pikachu, 160 charmander, 238 mew, 151 Latios, 47 Exeggutor, 77 mareep, 89 Latias, 98 Moltres, 54 Snorlax, 121 Mewtwo
 
 
-Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
+Methods: To gather our twitter data we made a python script that used twitters streaming API to stream the data as it arrives on twitter straight into a file that holds the data on our computer. We streamed only the tweets from #Pokemongo. While the data was being streamed in it was given a user, tweet, and time tag. This was to help us parse the data. To parse the data we used Python, Bash and R scripts which took advantage of the tags given to the data to parse it accurately.
 
 
 --------------------
 Pie Chart: 
-To make this pie chart we made a Bash script that made a list of each word from all the tweets, sorted them based on occurances with the number of occurences next to the word, and then picked the top ten most popular Pokemon. From this pie chart we can conclude that Pikachu is the most tweeted about Pokemon, this makes sense as it is the franchises mascot. One of the more surprising things discovered was the popularity of Mareep. This is perhaps tied to a PokemonGo Community Day event that took place while we were streaming tweets.
+To make this pie chart we made a Bash script that made a list of each word from all the tweets, sorted them based on occurrences with the number of occurrences next to the word, and then picked the top ten most popular Pokemon. From this pie chart we can conclude that Pikachu is the most tweeted about Pokemon, this makes sense as it is the franchises mascot. One of the more surprising things discovered was the popularity of Mareep. This is perhaps tied to a PokemonGo Community Day event that took place while we were streaming tweets.
 ---------------------
 
 Conclusion: In conclusion, our studies found a relationship between people playing PokemonGo and how they interact with it, such as what they care about, what the most popular Pokemon is and why that is, as well as what times people prefer to play Pokemon Go. Looking at the pie chart and the word cloud we find a correlation with twitter activity and shiny pokemon as well as Pokemon being featured on Community Day events over the course of a month. There was also an unexpected correlation between PokemonGo and PKG tokens which is a form of crypto currency that can be earned from within the game and the community events.
