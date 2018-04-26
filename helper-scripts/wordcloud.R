@@ -53,7 +53,8 @@ wordCloudCorpus <- tm_map(wordCloudCorpus, removeWords, c("pokemongo", "httpst�
                       "retweet", "httpstcokbititppf", "pokemon", "ポケモンgo","ポケモンの巣",
                       "httpstcokbititppf", "pokémon", "...", "twi...", "group...", "will",
                       "httpst...", "pikachu...", "know", "look", "just", "like", "join", "aquí",
-                      "1000", "u00001f680", "u0001f534", "u0001f31f", "u0001f525"))
+                      "1000", "u00001f680", "u0001f534", "u0001f31f", "u0001f525", "ポケモン",
+                      "出現報告", "ポケGO", "httpst…", "u0001f60", "pikachu…", "yeah", "ポケモンGO"))
 wordCloudCorpus <- tm_map(wordCloudCorpus, stemDocument)
 wordcloud(wordCloudCorpus, max.words = 100, random.order = FALSE, random.color = TRUE, 
           colors = rev(colorRampPalette(brewer.pal(8,"Paired"))(32)), scale=c(5, .5))
