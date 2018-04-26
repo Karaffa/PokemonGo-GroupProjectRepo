@@ -1,10 +1,10 @@
 import csv
 import sys
 #Manually type out name of txt file you are converting
-txt_file = r"forwordcloud.txt"
+txt_file = r"userparseddump.txt"
 
 #Manually type out name of csv file for conversion
-csv_file = r"forwordcloud.csv"
+csv_file = r"userparseddump.csv"
 
 # use 'with' if the program isn't going to immediately terminate
 # so you don't leave files open
